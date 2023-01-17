@@ -29,5 +29,5 @@ RUN \
   cd ~/dev && \
   git clone --recursive https://github.com/DarkFlippers/unleashed-firmware.git && \
   echo "export PATH=$PATH:/home/$DEV_USER/.local/bin" >> /home/$DEV_USER/.bashrc && \
-  pip install -r unleashed-firmware/scripts/requirements.txt
+  python3 -m pip install -r unleashed-firmware/scripts/requirements.txt
 
