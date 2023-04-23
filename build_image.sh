@@ -15,4 +15,4 @@ DEV_USER=$USER
 if [ $USER = root ]; then
 	DEV_USER=dev_user;
 fi;
-docker build --build-arg DEV_USER=$DEV_USER -t fap_dev_env .
+docker build --no-cache --build-arg DEV_USER=$DEV_USER -t fap_dev_env .

@@ -27,7 +27,6 @@ RUN \
   python3 -m pip install virtualenv && \
   mkdir -p ~/dev && \
   cd ~/dev && \
-  git clone --recursive https://github.com/DarkFlippers/unleashed-firmware.git && \
-  echo "export PATH=$PATH:/home/$DEV_USER/.local/bin" >> /home/$DEV_USER/.bashrc && \
-  python3 -m pip install -r unleashed-firmware/scripts/requirements.txt
+  git clone --recurse-submodules https://github.com/DarkFlippers/unleashed-firmware.git && \
+  echo "export PATH=$PATH:/home/$DEV_USER/.local/bin" >> /home/$DEV_USER/.bashrc
 
